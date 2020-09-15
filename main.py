@@ -16,8 +16,11 @@ def print_n(s,n):
     print(s)
     return print_n(s,n-1)
 
-if __name__ == '__main__':
-  def run():
-    sum_n(input(""))
+def run():
+  i = int(input('Enter an int: '))
+  print(f"sum is {sum_n(i)}.")
+  print_n(input("Enter a string: "),i)
 
+if __name__ == '__main__':
+  run()
 
